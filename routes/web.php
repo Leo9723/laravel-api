@@ -25,7 +25,7 @@ Route::get('/', function () {
 
 Route::get('/admin', function () {
     return view('welcome');
-})->name('home');
+})->name('admin_home');
 
 
 Route::middleware(['auth', 'verified'])->name('admin.')->prefix('admin')->group(function(){
